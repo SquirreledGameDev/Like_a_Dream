@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(210, 210, 255);
+  p {
+    user-select: none;
+  }
+  canvas {
+  }
+  .bottom_bar {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    pointer-events: none;
+    .score {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
